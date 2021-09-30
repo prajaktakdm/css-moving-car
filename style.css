@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(https://t4.ftcdn.net/jpg/03/00/94/69/360_F_300946931_kSR84OqudEhsmBZH47HU6ud7aZIDMjEx.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.buildings{
+    background-image: url(https://freepngimg.com/thumb/house/9-2-city-building-png.png);
+    position: absolute;
+    height: 510px;
+    width: 500%;
+    left: 0;
+    right: 0;
+    animation: building 20s linear infinite;
+    background-repeat: repeat-x;
+    display: block;
+    z-index: 1;
+    bottom: 176px;
+}
+.road{
+    background-image: url(road.png);
+    height: 177px;
+    width: 500%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: highway 5s linear infinite;
+}
+.car{
+    width: 400px;
+    left: 50%;
+    bottom: 38px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+@keyframes highway{
+    100%{
+        transform: translateX(-3400px)
+    }
+}
+
+@keyframes building{
+    100%{
+        transform: translateX(-2500px)
+    }
+}
